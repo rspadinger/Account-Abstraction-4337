@@ -1,0 +1,14 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+remappings = ['@openzeppelin/contracts=lib/openzeppelin-contracts/contracts']
+is-system = true
+via-ir = true
+fs_permissions = [
+    { access = "read", path = "./broadcast" },
+    { access = "read", path = "./reports" },
+]
+
+# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
+# foundry-devops : https://github.com/cyfrin/foundry-devops/tree/df9f90b490423578142b5dd50752db9427efb2ac 
